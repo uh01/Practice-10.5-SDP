@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>THIS IS HOME PAGE</h1> -->
+    <!-- <h2>Name : {{name}}</h2>
+    <h2>Age : {{age}}</h2> -->
+
+    <!-- Conditional Statement -->
+    <!-- {% if age >= 20 %}
+        <h4>You will get driving license</h4>
+    {% elif age >= 10  and age <= 19 %}
+        <h4>You will not get driving license</h4>
+    {% else %}
+        <h4>You are child</h4>
+    {% endif %} -->
+
+    <!-- For Loop -->
+    <!-- {% for i in courses %}
+        <h3>{{i.id}} {{i.name}} {{i.fee}}</h3>
+    {% endfor %} -->
+
+    <h1>{{ lst | join:"  " }} (Join Filter)</h1>
+    <h1>{{ birthday|date:"SHORT_DATE_FORMAT" }} (Date Filter)</h1>
+    <h1>{{ val1 | add:"5" }} (Add Filter)</h1>
+    <h1>{{ val2 | capfirst }} (Capfirst Filter)</h1>
+    <h1>{{ val3 | cut:"-" }} (Cut Filter)</h1>
+    <h1>{{ val4 | dictsort:"name" }} (Dictsort Filter)</h1>
+    <h1>{{ val5 | first }} (First Filter)</h1>
+    <h1>{{ val7 | length }} (Length Filter)</h1>
+    <h1>{{ val8 | lower }} (Lower Filter)</h1>
+    <h1>{{ val9 | upper }} (Upper Filter)</h1>
+    <h1>{{ val10 | title }} (Title Filter)</h1>
+    <h1>{{ val11 | random }} (Random Filter)</h1>
+    <h1>{{ val12 | slice:":2" }} (Slice Filter)</h1>
+    <h1>{{ val13 | time:"H:i" }} (Time Filter)</h1>
+    <h1>{{ val14 | truncatechars:6 }} (Truncatechars Filter)</h1>
+</body>
+</html>
